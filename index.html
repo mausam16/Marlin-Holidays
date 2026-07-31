@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marlin Holidays | Luxury Travel Agency</title>
+    <link href="templatemo-3d-coverflow.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="header" id="header">
+
+    <a href="#home" class="logo-container">
+        <div class="logo">
+            <img src="images/logo/marlin-logo.png" alt="Marlin Holidays">
+        </div>
+    </a>
+
+    <nav class="main-menu" id="mainMenu">
+        <a href="#home" class="menu-item active">Home</a>
+        <a href="#about" class="menu-item">About</a>
+        <a href="#services" class="menu-item">Services</a>
+        <a href="#destinations" class="menu-item">Destinations</a>
+        <a href="#contact" class="menu-item">Contact</a>
+    </nav>
+
+    <a href="#contact" class="plan-trip-btn">
+        Plan Your Trip
+    </a>
+
+    <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</header>
+
+<!-- Home Section -->
+    <section id="home" class="section">
+        <div class="coverflow-wrapper">
+            <div class="info">
+    <h2 id="current-title">Luxury Travel Experiences</h2>
+    <p id="current-description">Discover extraordinary destinations with Marlin Holidays</p>
+</div>
+
+            <div class="coverflow-container" tabindex="0">
+                <div class="coverflow" id="coverflow">
+                    <div class="coverflow-item" data-index="0">
+                        <div class="cover image-loading">
+                            <img src="images/hero/bali.jpg" alt="Bali" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="1">
+                        <div class="cover image-loading">
+                            <img src="images/hero/dubai.jpg" alt="Dubai" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="2">
+                        <div class="cover image-loading">
+                            <img src="images/hero/maldives.jpg" alt="Maldives" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="3">
+                        <div class="cover image-loading">
+                            <img src="images/hero/singapore.jpg" alt="Singapore" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="4">
+                        <div class="cover image-loading">
+                            <img src="images/hero/thailand.jpg" alt="Thailand" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="5">
+                        <div class="cover image-loading">
+                            <img src="images/hero/vietnam.jpg" alt="Vietnam" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="6">
+                        <div class="cover image-loading">
+                            <img src="images/hero/baku.jpg" alt="Baku" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                </div>
+
+                <button class="nav-button prev" onclick="navigate(-1)">‹</button>
+                <button class="nav-button next" onclick="navigate(1)">›</button>
+
+                <div class="dots-container" id="dots"></div>
+                
+                <!-- Play/Pause Button -->
+                <button class="play-pause-button" id="playPauseBtn" onclick="toggleAutoplay()">
+                    <span class="play-icon">▶</span>
+                    <span class="pause-icon" style="display: none;">❚❚</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section id="about" class="section about-section">
+
+    <div class="about-bg"></div>
+
+    <div class="about-content">
+
+        <span class="about-label">
+            ABOUT MARLIN HOLIDAYS
+        </span>
+
+        <h2 class="about-title">
+            Your Trusted Travel Partner
+        </h2>
+
+        <p class="about-text">
+            Marlin Holidays is a professionally managed travel company
+            dedicated to creating unforgettable travel experiences across
+            India and around the world. We believe every journey should be
+            comfortable, memorable and completely hassle-free.
+        </p>
+
+        <p class="about-text">
+            From family vacations and honeymoon tours to luxury holidays,
+            corporate travel and destination weddings, our experienced team
+            delivers personalized travel planning with trusted partners,
+            transparent pricing and dedicated customer support.
+        </p>
+
+    </div>
+
+    <div class="about-stats">
+
+    <div class="stat-box">
+        <h3>🌍 Worldwide</h3>
+        <span>Travel Solutions</span>
+    </div>
+
+    <div class="stat-box">
+        <h3>💎 Personalized</h3>
+        <span>Holiday Planning</span>
+    </div>
+
+    <div class="stat-box">
+        <h3>🤝 Trusted</h3>
+        <span>Travel Partner</span>
+    </div>
+
+    <div class="stat-box">
+    <h3>🕒</h3>
+    <h4>24×7</h4>
+    <span>Travel Assistance</span>
+</div>
+
+</div>
+
+</section>
+<!-- ================= END ABOUT ================= -->
+
+<!-- ===========================
+     SERVICES SECTION
+=========================== -->
+
+<section id="services" class="section services-section">
+
+    <div class="services-container">
+
+        <div class="services-header">
+
+            <span class="services-label">
+                OUR SERVICES
+            </span>
+
+            <h2 class="services-title">
+                Everything You Need For Your Perfect Journey
+            </h2>
+
+            <p class="services-description">
+                From flight bookings to destination weddings, we provide complete travel solutions with personalized planning, trusted support and seamless travel experiences.
+            </p>
+
+        </div>
+
+        <div class="services-grid">
+
+            <!-- Flights -->
+
+            <div class="service-card"
+     data-service="Flights"
+     data-icon="images/icons/flights.png">
+
+                <img src="images/icons/flights.png" alt="Flights">
+
+                <h3>Flights</h3>
+
+                <p>Domestic & International Flight Bookings</p>
+
+            </div>
+
+            <!-- Hotels -->
+
+            <div class="service-card"
+     data-service="Hotels"
+     data-icon="images/icons/hotels.png">
+
+                <img src="images/icons/hotels.png" alt="Hotels">
+
+                <h3>Hotels</h3>
+
+                <p>Luxury Hotels & Resort Stays</p>
+
+            </div>
+
+            <!-- Tour Packages -->
+
+            <div class="service-card"
+     data-service="Holiday Packages"
+     data-icon="images/icons/tour-packages.png">
+
+                <img src="images/icons/tour-packages.png" alt="Holiday Packages">
+
+                <h3>Holiday Packages</h3>
+
+                <p>Customized Holiday Packages</p>
+
+            </div>
+
+            <!-- Transfers -->
+
+            <div class="service-card"
+     data-service="Transfers"
+     data-icon="images/icons/transfers.png">
+
+                <img src="images/icons/transfers.png" alt="Transfers">
+
+                <h3>Airport Transfers</h3>
+
+                <p>Airport Transfers & Sightseeing</p>
+
+            </div>
+
+            <!-- Cruises -->
+
+            <div class="service-card"
+     data-service="Cruises"
+     data-icon="images/icons/cruises.png">
+
+                <img src="images/icons/cruises.png" alt="Cruises">
+
+                <h3>Cruises</h3>
+
+                <p>Luxury Cruise Vacations</p>
+
+            </div>
+
+            <!-- Corporate -->
+
+            <div class="service-card"
+     data-service="Corporate Travel"
+     data-icon="images/icons/corporate-travel.png">
+
+                <img src="images/icons/corporate-travel.png" alt="Corporate Travel">
+
+                <h3>Corporate Travel</h3>
+
+                <p>Business & Corporate Travel Solutions</p>
+
+            </div>
+
+            <!-- Passport -->
+
+            <div class="service-card"
+     data-service="Passport & Visa"
+     data-icon="images/icons/passport-visa.png">
+
+                <img src="images/icons/passport-visa.png" alt="Passport & Visa">
+
+                <h3>Passport & Visa</h3>
+
+                <p>New, Renewal & Visa Assistance</p>
+
+            </div>
+
+            <!-- Weddings -->
+
+            <div class="service-card"
+     data-service="Destination Weddings"
+     data-icon="images/icons/destination-weddings.png">
+
+                <img src="images/icons/destination-weddings.png" alt="Destination Weddings">
+
+                <h3>Destination Weddings</h3>
+
+                <p>Dream Weddings at Exotic Locations</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        DESTINATIONS
+=========================== -->
+
+<section class="destinations section-padding" id="destinations">
+
+    <div class="container">
+
+        <div class="section-title-wrap text-center mb-5">
+
+            <span class="section-subtitle">
+                EXPLORE DESTINATIONS
+            </span>
+
+            <h2 class="section-title">
+                Choose Your Travel Style
+            </h2>
+
+            <p class="section-description">
+                Explore India's finest destinations or discover incredible places around the world.
+            </p>
+
+        </div>
+
+        <div class="destination-category-grid">
+
+            <!-- Domestic -->
+
+            <a href="domestic.html" class="destination-category-card">
+
+                <div class="destination-watermark">
+    INDIA
+</div>
+
+                <div class="destination-content">
+
+                    <span class="destination-small">
+                        INDIA
+                    </span>
+
+                    <h3>
+                        Domestic
+                    </h3>
+
+                    <p>
+                        Explore Incredible India with handpicked holiday destinations.
+                    </p>
+
+                    <span class="destination-btn">
+                        View Destinations →
+                    </span>
+
+                </div>
+
+            </a>
+            
+
+            <!-- International -->
+
+            <a href="international.html" class="destination-category-card">
+
+                <div class="destination-watermark">
+    WORLD
+</div>
+
+                <div class="destination-content">
+
+                    <span class="destination-small">
+                        WORLD
+                    </span>
+
+                    <h3>
+                        International
+                    </h3>
+
+                    <p>
+                        Discover amazing countries across the world with Marlin Holidays.
+                    </p>
+
+                    <span class="destination-btn">
+                        View Destinations →
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="contact-content">
+            <div class="contact-header">
+                <h2>Contact Marlin Holidays</h2>
+
+<p>
+We're here to help you plan your perfect journey. Get in touch with our travel experts today.
+</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info-section">
+                    <h3>Let's Plan Your Next Journey</h3>
+                    <p>Whether you're planning a family holiday, honeymoon, corporate trip, flight booking or visa assistance, our team is here to help.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:marlinholiday4@gmail.com">marlinholiday4@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+919173276527">+91 91732 76527</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>
+<a href="https://www.google.com/maps/search/?api=1&query=7-C,+Vardan+Tower,+Navrangpura,+Ahmedabad"
+target="_blank">
+7-C, Vardan Tower, Nr. Lakhudi Talav, Sardar Patel Stadium Road, Navrangpura, Ahmedabad, Gujarat 380009
+</a>
+</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Business Hours</h4>
+                                <p>Monday - Saturday 10:00 AM – 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+
+    <h4>Follow Us</h4>
+
+    <div class="social-buttons">
+
+        <!-- Instagram -->
+
+        <a href="https://www.instagram.com/marlin_holidays?igsh=ZGh0eGhpanBxMW41"
+           target="_blank"
+           class="social-btn"
+           title="Instagram">
+
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+            </svg>
+
+        </a>
+
+        <!-- WhatsApp -->
+
+        <a href="https://wa.me/919173276527"
+           target="_blank"
+           class="social-btn"
+           title="WhatsApp">
+
+            <svg viewBox="0 0 24 24">
+                <path d="M20.52 3.48A11.86 11.86 0 0012.04 0C5.52 0 .2 5.32.2 11.84c0 2.08.54 4.1 1.56 5.89L0 24l6.43-1.69a11.8 11.8 0 005.61 1.43h.01c6.52 0 11.84-5.31 11.84-11.84 0-3.16-1.23-6.13-3.37-8.42zM12.05 21.6a9.76 9.76 0 01-4.97-1.37l-.36-.21-3.82 1 1.02-3.72-.24-.38a9.74 9.74 0 01-1.5-5.08c0-5.41 4.41-9.82 9.83-9.82 2.63 0 5.09 1.02 6.94 2.88a9.75 9.75 0 012.88 6.94c0 5.41-4.41 9.82-9.82 9.82zm5.39-7.35c-.29-.15-1.71-.84-1.98-.94-.26-.1-.45-.15-.64.15-.19.29-.74.94-.91 1.13-.17.19-.34.22-.63.08-.29-.15-1.22-.45-2.32-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.15-.64-1.55-.88-2.12-.23-.56-.47-.49-.64-.5h-.55c-.19 0-.5.07-.76.36-.26.29-1 1-.99 2.43 0 1.43 1.03 2.81 1.17 3 .14.19 2.03 3.1 4.91 4.35.68.29 1.21.46 1.63.59.68.22 1.3.19 1.79.11.55-.08 1.71-.7 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.11-.26-.18-.55-.33z"/>
+            </svg>
+
+        </a>
+
+    </div>
+
+</div>
+ </div>               
+                <div class="contact-form-section">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number</label>
+
+<input type="tel"
+       id="mobile"
+       name="mobile"
+       maxlength="10"
+       required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Travel Requirement</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send on WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-copyright">
+            © Marlin Holidays. All Rights Reserved.
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Terms &amp; Conditions</a>
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- Scroll to top button -->
+<div class="scroll-to-top" id="scrollToTop">
+    <span>↑</span>
+</div>
+
+<!-- =====================================================
+     SERVICE ENQUIRY POPUP
+===================================================== -->
+
+<div class="service-popup" id="servicePopup">
+
+    <div class="popup-overlay"></div>
+
+    <div class="popup-box">
+
+        <button class="popup-close" id="closePopup">&times;</button>
+
+        <div class="popup-header">
+
+            <img id="popupIcon" src="" alt="">
+
+            <span class="popup-label">MARLIN HOLIDAYS</span>
+
+            <h2 id="popupTitle">
+                Service Enquiry
+            </h2>
+
+            <p id="popupSubtitle">
+                Fill in your travel details and continue on WhatsApp.
+            </p>
+
+        </div>
+
+        <form id="serviceForm">
+
+            <!-- Dynamic Fields -->
+            <div id="dynamicFields"></div>
+
+            <button type="submit" class="popup-submit">
+                Continue on WhatsApp
+            </button>
+
+            <p class="popup-note">
+                Your details will automatically be added to your WhatsApp message.
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+<script src="templatemo-3d-coverflow-scripts.js"></script>
+<script>
+
+document.getElementById("contactForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const mobile = document.getElementById("mobile").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    let text =
+`🌍 *Marlin Holidays Contact Enquiry*
+
+👤 Full Name: ${name}
+
+📞 Mobile: ${mobile}
+
+✈ Travel Requirement: ${subject}
+
+📝 Additional Details:
+${message}`;
+
+    window.open(
+        "https://wa.me/919173276527?text=" + encodeURIComponent(text),
+        "_blank"
+    );
+
+    this.reset();
+
+});
+
+</script>
+
+</body>
+</html>
